@@ -1,0 +1,481 @@
+{
+    "openapi": "3.0.2",
+    "info": {
+        "title": "Product Management API To Publish",
+        "version": "1.0.0",
+        "description": "Data Test"
+    },
+    "paths": {
+        "/addProduct": {
+            "summary": "Add product endpoint",
+            "description": "Add product endpoint",
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ProductItem"
+                            },
+                            "examples": {
+                                "Product": {
+                                    "value": {
+                                        "parentCatId": 23,
+                                        "productId": 96,
+                                        "isHazardous": true,
+                                        "warrentyInfo": "some text",
+                                        "lastUpdatedDate": "2018-02-10T09:30Z",
+                                        "legalDisclaimers": "some text",
+                                        "hasManufactureWarrenty": true,
+                                        "hasSellerWarrenty": true,
+                                        "brandInfo": {
+                                            "brandName": "some text",
+                                            "description": "some text",
+                                            "manufacturer": "some text",
+                                            "logo": "some text",
+                                            "type": "some text",
+                                            "website": "some text"
+                                        },
+                                        "upcCode": "some text",
+                                        "productType": "some text",
+                                        "extendedAttributes": [
+                                            {
+                                                "locale": "some text",
+                                                "attributeName": "some text",
+                                                "attributeValue": "some text",
+                                                "default": true
+                                            },
+                                            {
+                                                "locale": "some text",
+                                                "attributeName": "some text",
+                                                "attributeValue": "some text",
+                                                "default": true
+                                            }
+                                        ],
+                                        "localizedAttributes": [
+                                            {
+                                                "locale": "some text",
+                                                "displayName": "some text",
+                                                "description": "some text",
+                                                "longDescription": "some text"
+                                            },
+                                            {
+                                                "locale": "some text",
+                                                "displayName": "some text",
+                                                "description": "some text",
+                                                "longDescription": "some text"
+                                            }
+                                        ],
+                                        "productImages": [
+                                            {
+                                                "thumbImage": "URLpath",
+                                                "smallImage": "URLpath",
+                                                "largeImage": "URLpath",
+                                                "name": "some text",
+                                                "description": "some text"
+                                            },
+                                            {
+                                                "thumbImage": "URLpath",
+                                                "smallImage": "URLpath",
+                                                "largeImage": "URLpath",
+                                                "name": "some text",
+                                                "description": "some text"
+                                            }
+                                        ],
+                                        "productVideos": [
+                                            {
+                                                "path": "some text",
+                                                "type": "some text",
+                                                "name": "some text",
+                                                "description": "some text"
+                                            },
+                                            {
+                                                "path": "some text",
+                                                "type": "some text",
+                                                "name": "some text",
+                                                "description": "some text"
+                                            }
+                                        ],
+                                        "skuList": [
+                                            {
+                                                "marketplaceApproved": true,
+                                                "skuColor": "some text",
+                                                "skuDimension": [
+                                                    {
+                                                        "unit": "some text",
+                                                        "length": 63.5,
+                                                        "width": 10.59,
+                                                        "height": 50.38,
+                                                        "default": true
+                                                    },
+                                                    {
+                                                        "unit": "some text",
+                                                        "length": 3.95,
+                                                        "width": 93.84,
+                                                        "height": 35.14,
+                                                        "default": true
+                                                    }
+                                                ],
+                                                "skuWeight": [
+                                                    {
+                                                        "unit": "some text",
+                                                        "weight": 93.44,
+                                                        "default": true
+                                                    },
+                                                    {
+                                                        "unit": "some text",
+                                                        "weight": 14.94,
+                                                        "default": true
+                                                    }
+                                                ],
+                                                "priceDetails": [
+                                                    {
+                                                        "country": "some text",
+                                                        "currency": "some text",
+                                                        "salesPrice": 10.15,
+                                                        "listPrice": 41.48
+                                                    },
+                                                    {
+                                                        "country": "some text",
+                                                        "currency": "some text",
+                                                        "salesPrice": 65.19,
+                                                        "listPrice": 35.73
+                                                    }
+                                                ],
+                                                "rating": 91,
+                                                "onSale": true,
+                                                "buyQuantityLimit": 88,
+                                                "createdDate": "2018-02-10T09:30Z",
+                                                "lastUpdatedDate": "2018-02-10T09:30Z",
+                                                "createdBy": 38,
+                                                "UpdatedBy": 13,
+                                                "extendedSkuDetails": [
+                                                    {
+                                                        "locale": "some text",
+                                                        "attributeName": "some text",
+                                                        "attributeValue": "some text"
+                                                    },
+                                                    {
+                                                        "locale": "some text",
+                                                        "attributeName": "some text",
+                                                        "attributeValue": "some text"
+                                                    }
+                                                ],
+                                                "metaDescription": "some text",
+                                                "localizedSkuDetails": [
+                                                    {
+                                                        "locale": "some text",
+                                                        "displayName": "some text",
+                                                        "description": "some text",
+                                                        "longDescription": "some text",
+                                                        "isDefault": true
+                                                    },
+                                                    {
+                                                        "locale": "some text",
+                                                        "displayName": "some text",
+                                                        "description": "some text",
+                                                        "longDescription": "some text",
+                                                        "isDefault": true
+                                                    }
+                                                ],
+                                                "skuImages": {
+                                                    "thumbImages": [
+                                                        {
+                                                            "path": "some text",
+                                                            "type": "some text",
+                                                            "name": "some text",
+                                                            "description": "some text"
+                                                        },
+                                                        {
+                                                            "path": "some text",
+                                                            "type": "some text",
+                                                            "name": "some text",
+                                                            "description": "some text"
+                                                        }
+                                                    ],
+                                                    "smallImages": [
+                                                        {
+                                                            "path": "some text",
+                                                            "type": "some text",
+                                                            "name": "some text",
+                                                            "description": "some text"
+                                                        },
+                                                        {
+                                                            "path": "some text",
+                                                            "type": "some text",
+                                                            "name": "some text",
+                                                            "description": "some text"
+                                                        }
+                                                    ],
+                                                    "largeImages": [
+                                                        {
+                                                            "path": "some text",
+                                                            "type": "some text",
+                                                            "name": "some text",
+                                                            "description": "some text"
+                                                        },
+                                                        {
+                                                            "path": "some text",
+                                                            "type": "some text",
+                                                            "name": "some text",
+                                                            "description": "some text"
+                                                        }
+                                                    ]
+                                                },
+                                                "skuVideos": [
+                                                    {
+                                                        "path": "some text",
+                                                        "type": "some text",
+                                                        "name": "some text",
+                                                        "description": "some text"
+                                                    },
+                                                    {
+                                                        "path": "some text",
+                                                        "type": "some text",
+                                                        "name": "some text",
+                                                        "description": "some text"
+                                                    }
+                                                ],
+                                                "skuMetaKeywords": [
+                                                    {
+                                                        "keyword": "some text"
+                                                    },
+                                                    {
+                                                        "keyword": "some text"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "marketplaceApproved": true,
+                                                "skuColor": "some text",
+                                                "skuDimension": [
+                                                    {
+                                                        "unit": "some text",
+                                                        "length": 18.34,
+                                                        "width": 25.46,
+                                                        "height": 43.05,
+                                                        "default": true
+                                                    },
+                                                    {
+                                                        "unit": "some text",
+                                                        "length": 57.49,
+                                                        "width": 40.62,
+                                                        "height": 77.02,
+                                                        "default": true
+                                                    }
+                                                ],
+                                                "skuWeight": [
+                                                    {
+                                                        "unit": "some text",
+                                                        "weight": 62.08,
+                                                        "default": true
+                                                    },
+                                                    {
+                                                        "unit": "some text",
+                                                        "weight": 17.27,
+                                                        "default": true
+                                                    }
+                                                ],
+                                                "priceDetails": [
+                                                    {
+                                                        "country": "some text",
+                                                        "currency": "some text",
+                                                        "salesPrice": 19.5,
+                                                        "listPrice": 54.81
+                                                    },
+                                                    {
+                                                        "country": "some text",
+                                                        "currency": "some text",
+                                                        "salesPrice": 80.76,
+                                                        "listPrice": 15.08
+                                                    }
+                                                ],
+                                                "rating": 25,
+                                                "onSale": true,
+                                                "buyQuantityLimit": 2,
+                                                "createdDate": "2018-02-10T09:30Z",
+                                                "lastUpdatedDate": "2018-02-10T09:30Z",
+                                                "createdBy": 38,
+                                                "UpdatedBy": 47,
+                                                "extendedSkuDetails": [
+                                                    {
+                                                        "locale": "some text",
+                                                        "attributeName": "some text",
+                                                        "attributeValue": "some text"
+                                                    },
+                                                    {
+                                                        "locale": "some text",
+                                                        "attributeName": "some text",
+                                                        "attributeValue": "some text"
+                                                    }
+                                                ],
+                                                "metaDescription": "some text",
+                                                "localizedSkuDetails": [
+                                                    {
+                                                        "locale": "some text",
+                                                        "displayName": "some text",
+                                                        "description": "some text",
+                                                        "longDescription": "some text",
+                                                        "isDefault": true
+                                                    },
+                                                    {
+                                                        "locale": "some text",
+                                                        "displayName": "some text",
+                                                        "description": "some text",
+                                                        "longDescription": "some text",
+                                                        "isDefault": true
+                                                    }
+                                                ],
+                                                "skuImages": {
+                                                    "thumbImages": [
+                                                        {
+                                                            "path": "some text",
+                                                            "type": "some text",
+                                                            "name": "some text",
+                                                            "description": "some text"
+                                                        },
+                                                        {
+                                                            "path": "some text",
+                                                            "type": "some text",
+                                                            "name": "some text",
+                                                            "description": "some text"
+                                                        }
+                                                    ],
+                                                    "smallImages": [
+                                                        {
+                                                            "path": "some text",
+                                                            "type": "some text",
+                                                            "name": "some text",
+                                                            "description": "some text"
+                                                        },
+                                                        {
+                                                            "path": "some text",
+                                                            "type": "some text",
+                                                            "name": "some text",
+                                                            "description": "some text"
+                                                        }
+                                                    ],
+                                                    "largeImages": [
+                                                        {
+                                                            "path": "some text",
+                                                            "type": "some text",
+                                                            "name": "some text",
+                                                            "description": "some text"
+                                                        },
+                                                        {
+                                                            "path": "some text",
+                                                            "type": "some text",
+                                                            "name": "some text",
+                                                            "description": "some text"
+                                                        }
+                                                    ]
+                                                },
+                                                "skuVideos": [
+                                                    {
+                                                        "path": "some text",
+                                                        "type": "some text",
+                                                        "name": "some text",
+                                                        "description": "some text"
+                                                    },
+                                                    {
+                                                        "path": "some text",
+                                                        "type": "some text",
+                                                        "name": "some text",
+                                                        "description": "some text"
+                                                    }
+                                                ],
+                                                "skuMetaKeywords": [
+                                                    {
+                                                        "keyword": "some text"
+                                                    },
+                                                    {
+                                                        "keyword": "some text"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "BrandInfo": {
+                "$ref": "apicurio:26408#/components/schemas/BrandInfo"
+            },
+            "Country": {
+                "$ref": "apicurio:26408#/components/schemas/Country"
+            },
+            "Currency": {
+                "$ref": "apicurio:26408#/components/schemas/Currency"
+            },
+            "DimensionItem": {
+                "$ref": "apicurio:26408#/components/schemas/DimensionItem"
+            },
+            "ExtendedProductAttributesInfo": {
+                "$ref": "apicurio:26408#/components/schemas/ExtendedProductAttributesInfo"
+            },
+            "ExtendedSkuAttributeItem": {
+                "$ref": "apicurio:26408#/components/schemas/ExtendedSkuAttributeItem"
+            },
+            "Locale": {
+                "$ref": "apicurio:26408#/components/schemas/Locale"
+            },
+            "LocalizedProductAttributesItem": {
+                "$ref": "apicurio:26408#/components/schemas/LocalizedProductAttributesItem"
+            },
+            "LocalizedSkuAttributeItem": {
+                "$ref": "apicurio:26408#/components/schemas/LocalizedSkuAttributeItem"
+            },
+            "Media": {
+                "$ref": "apicurio:26408#/components/schemas/Media"
+            },
+            "ProductImagesItem": {
+                "$ref": "apicurio:26408#/components/schemas/ProductImagesItem"
+            },
+            "ProductItem": {
+                "$ref": "apicurio:26408#/components/schemas/ProductItem"
+            },
+            "ProductVideoItems": {
+                "$ref": "apicurio:26408#/components/schemas/ProductVideoItems"
+            },
+            "Rating": {
+                "$ref": "apicurio:26408#/components/schemas/Rating"
+            },
+            "ShippingAvailability": {
+                "$ref": "apicurio:26408#/components/schemas/ShippingAvailability"
+            },
+            "SkuImageItem": {
+                "$ref": "apicurio:26408#/components/schemas/SkuImageItem"
+            },
+            "SKUItem": {
+                "$ref": "apicurio:26408#/components/schemas/SKUItem"
+            },
+            "SkuMetakeywordItem": {
+                "$ref": "apicurio:26408#/components/schemas/SkuMetakeywordItem"
+            },
+            "SkuPriceItem": {
+                "$ref": "apicurio:26408#/components/schemas/SkuPriceItem"
+            },
+            "SkuVideoItem": {
+                "$ref": "apicurio:26408#/components/schemas/SkuVideoItem"
+            },
+            "Unit": {
+                "$ref": "apicurio:26408#/components/schemas/Unit"
+            },
+            "WeightItem": {
+                "$ref": "apicurio:26408#/components/schemas/WeightItem"
+            }
+        }
+    }
+}
